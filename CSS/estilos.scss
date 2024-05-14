@@ -39,7 +39,6 @@ nav{
 .barra a:hover{
     color: #333;
 }
-
 .carousel-item{
     min-height: 400px;
 }
@@ -69,7 +68,40 @@ nav{
     background: rgba(0, 0, 0, 0.361);
     z-index: 1;
 }
-
+#trabajo{
+    background-image: url(../image/ai-generated-8600463_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #333;
+}
+.burbuja{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.619);
+    border: 5px solid  rgba(178, 34, 34, 0.669);
+    border-radius: 7px;
+    padding-bottom: 20px;
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);  
+    }
+    a{
+        background-color:  #b22222ab;
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        .burbuja a:hover{
+            background-color: gray;
+        }
+    }
+}
 h2{
     text-align: center;
     padding: 20px;
@@ -95,7 +127,18 @@ h2{
     transform: translatey(20px);
         -webkit-transform: translatey(20px);
         -moz-transform: translatey(20px);
-}            
+}
+.nuestro{
+    display: flex;
+    background-color: rgba(177, 49, 49, 0.543);
+    border-radius: 10px;
+}
+.restaright{
+    p{
+        font-size: 20px;
+        text-align: left;
+    }
+}         
 .card{
     background-color: $color2;
 }
@@ -111,7 +154,10 @@ h2{
     font-family:"Dancing Script", cursive;
     font-size: 50px;
 }
-
+form{
+    background-color: $color3;
+    padding-bottom: 25px;
+}
 footer{
     background-color: black;
     color: white;
@@ -156,5 +202,26 @@ footer{
     .carousel-caption p{
         width: 100%;
         font-size: 16px;
+    }
+    .trabajo{
+        min-height: 500px;
+        min-width: 250px;
+    }
+    .burbuja{
+        margin-top: 150px;
+    }
+    .burbuja h1{
+        font-size: 40px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .burbuja p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .somos{
+        margin-top: 50px;
+        background-color: $color1;
     }
 }

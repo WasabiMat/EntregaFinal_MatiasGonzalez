@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/estilos.css">
     <title>Segunda Pre-Entrega</title>
 </head>
@@ -28,10 +29,46 @@
                 </div>
         </div> 
     </nav>
+    <main class="row" id="trabajo" data-aos="fade-up">
+        <div class="burbuja col-sm-1 ">
+            <h1>El Bodegón de Alberto</h1>
+            <p>¡Bienvenidos a nuestro restaurante patagónico, donde la magia de la naturaleza se fusiona con la exquisitez de la cocina! En el corazón de la Patagonia, hemos creado un espacio donde cada plato es una aventura culinaria, y cada bocado te transporta a los paisajes más impresionantes de esta región única en el mundo.</p>
+            <p>Si quieres conocer nuestro Menú</p>
+            <a class="" href="./pages/menu.html">Ver mas</a>
+        </div>
+    </main>
+    <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" data-aos="fade-up">
+        <h2>¡Trabaja Con Nosotros!</h2>
+        <section class="container">
+            <div class="row">
+                <label for="Nombre">Nombre y Apellido</label>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre y Apellido" name="text">
+                </div>
+                <label for="email">Correo Electronico</label>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Colocar email" name="email">
+                </div>
+                <label for="numero">Telefono</label>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Colocar Numero Telefonico" name="email">
+                </div>
+                <label for="Cv">Curriculum Vitae</label> <br>
+                <input type="file" required placeholder="Adjuntar Archivo">
+                <label for="sel1" class="form-label">Sexo:</label> <br>
+                <div class="col">
+                    <select class="form-select" id="sel1" name="sellist1"> <br><br><br>
+                    <option>Masculino</option><br>
+                    <option>Femenino</option><br>
+                    <option>No binario</option><br>
+                    </select>
+                </div>    
+            </div>
+            <br> <input  type="submit" value="Enviar">
+        </section>
+        </form>
 
-
-
-    <footer>
+    <footer data-aos="fade-up">
         <div class="container">
                 <div class="row">
                     <div class="col-md-3">
@@ -93,5 +130,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
