@@ -81,6 +81,18 @@ h2 {
   padding: 80px 0;
 }
 
+.transDown {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.transDown:hover {
+  transform: translatey(20px);
+  -webkit-transform: translatey(20px);
+  -moz-transform: translatey(20px);
+}
+
 .card {
   background-color: #ba1124;
 }
@@ -131,7 +143,7 @@ footer div ul li a {
     bottom: 30px;
   }
   .carousel-caption h5 {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 0;
     text-align: center;
   }
