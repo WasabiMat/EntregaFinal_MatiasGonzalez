@@ -8,7 +8,7 @@ $color1: #720E07;
 $color2: #ba1124;
 $color3: #ecb1b1b1;
 $color4: #ffffff;
-$color5: #D5AC4E;
+$color5: #b22222ab;
 
 
 body{
@@ -77,26 +77,38 @@ nav{
     justify-content: center;
     align-items: center;
 }
+#local{
+    background-image: url(../image/sucursales.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1{
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px #333;
+    margin-left: 20px;
 }
 .burbuja{
     width: 80%;
     background-color: rgba(0, 0, 0, 0.619);
-    border: 5px solid  rgba(178, 34, 34, 0.669);
+    border: 5px solid  $color5;
     border-radius: 7px;
     padding-bottom: 20px;
     p{
         font-size: 20px;
-        margin-bottom: 20px;
+        margin: 20px 20px 20px 20px;
         color: rgb(255, 255, 255);  
     }
     a{
-        background-color:  #b22222ab;
+        background-color: $color5;
         color: white;
         text-decoration: none;
         padding: 10px 30px;
+        margin-left: 10px;
         .burbuja a:hover{
             background-color: gray;
         }
@@ -130,7 +142,7 @@ h2{
 }
 .nuestro{
     display: flex;
-    background-color: rgba(177, 49, 49, 0.543);
+    background-color: $color5;
     border-radius: 10px;
 }
 .restaright{
@@ -147,11 +159,45 @@ h2{
     height: 250px;
     margin-bottom: 20px;
 }
+.card-img{
+    width: 530px;
+    height: 350px;
+    margin: 20px;
+}
+.card-img-overlay{
+    background-color: #00000054;
+    h5{
+        margin-top: 40px;
+        color: white;
+        font-size: 40px;
+        text-shadow:1px  0px 0px black,
+                    0px  1px 0px black,
+                    -1px  0px 0px black,
+                    0px -1px 0px black;
+    }
+    p{
+        padding: 20px;
+        color: white;
+        font-size: 30px;
+        text-shadow:1px  0px 0px black,
+                    0px  1px 0px black,
+                    -1px  0px 0px black,
+                    0px -1px 0px black;
+        a{
+            text-decoration: none;
+            background-color: $color3;
+            color: white;
+            font-size: 20px
+        }
+    }
+    a:hover{
+        background-color: $color1;
+    }
+}
 .card-body{
     background-color: $color3;
 }
 .card-title{
-    font-family:"Dancing Script", cursive;
     font-size: 50px;
 }
 form{
@@ -203,22 +249,43 @@ footer{
         width: 100%;
         font-size: 16px;
     }
-    .trabajo{
+    #trabajo{
         min-height: 500px;
         min-width: 250px;
     }
+    #local{
+        min-height: 1800px;
+        min-width: 250px;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    }
+    #local .card-img{
+        height: 300px;
+        width: 300px;
+    }
+    .card-img-overlay h5{
+        font-size: 25px;
+    }
+    .card-img-overlay p{
+        font-size: 15px;
+        }
+    .card-img-overlay p a{
+        margin-top: 30px;
+        font-size: 15px;
+        }
     .burbuja{
-        margin-top: 150px;
+        margin-top: 140px;
     }
     .burbuja h1{
         font-size: 40px;
         margin-top: 0;
+        padding-right: 30px;
         text-align: center;
     }
-
     .burbuja p{
         width: 100%;
         font-size: 16px;
+        padding-right: 30px;
     }
     .somos{
         margin-top: 50px;

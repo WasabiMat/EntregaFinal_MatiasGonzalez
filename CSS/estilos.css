@@ -74,21 +74,32 @@ nav a span {
   align-items: center;
 }
 
+#local {
+  background-image: url(../image/sucursales.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 5px #333;
+  margin-left: 20px;
 }
 
 .burbuja {
   width: 80%;
   background-color: rgba(0, 0, 0, 0.619);
-  border: 5px solid rgba(178, 34, 34, 0.669);
+  border: 5px solid rgba(178, 34, 34, 0.6705882353);
   border-radius: 7px;
   padding-bottom: 20px;
 }
 .burbuja p {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin: 20px 20px 20px 20px;
   color: rgb(255, 255, 255);
 }
 .burbuja a {
@@ -96,6 +107,7 @@ h1 {
   color: white;
   text-decoration: none;
   padding: 10px 30px;
+  margin-left: 10px;
 }
 .burbuja a .burbuja a:hover {
   background-color: gray;
@@ -132,7 +144,7 @@ h2 {
 
 .nuestro {
   display: flex;
-  background-color: rgba(177, 49, 49, 0.543);
+  background-color: rgba(178, 34, 34, 0.6705882353);
   border-radius: 10px;
 }
 
@@ -151,12 +163,42 @@ h2 {
   margin-bottom: 20px;
 }
 
+.card-img {
+  width: 530px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3294117647);
+}
+.card-img-overlay h5 {
+  margin-top: 40px;
+  color: white;
+  font-size: 40px;
+  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+}
+.card-img-overlay p {
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+}
+.card-img-overlay p a {
+  text-decoration: none;
+  background-color: rgba(236, 177, 177, 0.6941176471);
+  color: white;
+  font-size: 20px;
+}
+.card-img-overlay a:hover {
+  background-color: #720E07;
+}
+
 .card-body {
   background-color: rgba(236, 177, 177, 0.6941176471);
 }
 
 .card-title {
-  font-family: "Dancing Script", cursive;
   font-size: 50px;
 }
 
@@ -204,21 +246,43 @@ footer div ul li a {
     width: 100%;
     font-size: 16px;
   }
-  .trabajo {
+  #trabajo {
     min-height: 500px;
     min-width: 250px;
   }
+  #local {
+    min-height: 1800px;
+    min-width: 250px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  #local .card-img {
+    height: 300px;
+    width: 300px;
+  }
+  .card-img-overlay h5 {
+    font-size: 25px;
+  }
+  .card-img-overlay p {
+    font-size: 15px;
+  }
+  .card-img-overlay p a {
+    margin-top: 30px;
+    font-size: 15px;
+  }
   .burbuja {
-    margin-top: 150px;
+    margin-top: 140px;
   }
   .burbuja h1 {
     font-size: 40px;
     margin-top: 0;
+    padding-right: 30px;
     text-align: center;
   }
   .burbuja p {
     width: 100%;
     font-size: 16px;
+    padding-right: 30px;
   }
   .somos {
     margin-top: 50px;
