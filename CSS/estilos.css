@@ -247,7 +247,7 @@ footer div ul li a {
     font-size: 16px;
   }
   #trabajo {
-    min-height: 500px;
+    min-height: 400px;
     min-width: 250px;
   }
   #local {
@@ -271,17 +271,18 @@ footer div ul li a {
     font-size: 15px;
   }
   .burbuja {
-    margin-top: 140px;
+    margin-top: 170px;
+    margin-bottom: 170px;
   }
   .burbuja h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 0;
     padding-right: 30px;
     text-align: center;
   }
   .burbuja p {
     width: 100%;
-    font-size: 16px;
+    font-size: 12px;
     padding-right: 30px;
   }
   .somos {
